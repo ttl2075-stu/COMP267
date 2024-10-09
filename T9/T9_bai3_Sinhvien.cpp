@@ -8,7 +8,7 @@ private:
     string studentID;
     string fullName;
     float averageScore;
-
+    
 public:
     void input() {
         cout << "Nhap ma sinh vien: ";
@@ -25,6 +25,11 @@ public:
         cout << "Ho va ten: " << fullName << endl;
         cout << "Diem trung binh: " << fixed << setprecision(1) << averageScore << endl;
     }
+
+    float getAverageScore() const {
+        return averageScore;
+    }
+
 };
 
 int main() {
@@ -35,9 +40,13 @@ int main() {
     vector<Student> students(n);
 
     for (int i = 0; i < n; i++) {
-        cout << "Nhap vao thong tin cua sinh vien " << i + 1 << ":\n";
         students[i].input();
     }
+
+    sort(students.begin(), students.end(), [](const Student& a, const Student& b) {
+        return a.getAverageScore() > b.getAverageScore();
+    });
+
     cout << "\nThong tin cua cac sinh vien:\n";
     for(auto& student : students) {
         student.display();
