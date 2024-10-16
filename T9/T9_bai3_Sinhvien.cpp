@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
+#include <algorithm> // Lấy thư viện sort
 #include <iomanip>
 using namespace std;
 class Student {
