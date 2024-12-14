@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Github/COMP267",
-      "program": "d:/Github/COMP267/build/Debug/outDebug",
+      "cwd": "d:/Github/COMP267/T3 - Hàm",
+      "program": "d:/Github/COMP267/T3 - Hàm/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
